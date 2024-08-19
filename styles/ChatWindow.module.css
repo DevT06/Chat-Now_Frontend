@@ -1,0 +1,428 @@
+@media screen and (min-width: 600px) {
+    .chatWindow {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 100vh;
+        border-left: 1px solid #707070;
+        width: calc(100% - 1px);
+    }
+
+    .mainGrid {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .chatHeader {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: calc(100% - 370px);
+        justify-content: space-between;
+        background-color: #bbe1f1;
+        padding: 10px 0;
+        border-bottom: 1px solid #707070;
+        box-shadow: 4px 4px 9px 0px #bfbfbf;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #cccccc;
+        border-radius: 50%;
+        margin-left: 10px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .menuIcon {
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+    }
+
+    .messagesSend {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        flex-grow: 1;
+        padding: 16px;
+
+    }
+
+    .outerMessageSend {
+        margin-top: 60px;
+        height: 87vh;
+        overflow-y: auto;
+        scroll-behavior: auto; /*maybe switch to smooth*/
+    }
+
+    .messageSend {
+        display: flex;
+        /*align-self: flex-start;*/
+        background-color: #cccccc;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: fit-content;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .messageSendOwn {
+        display: flex;
+        align-self: flex-end;
+        background-color: #bbe1f1;
+        padding: 10px;
+        border-radius: 10px;
+        width: fit-content;
+        margin-top: 5px;
+        margin-bottom: 16px;
+    }
+
+    .messageArticleOwn {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-self: flex-end;
+        max-width: 85%;
+    }
+
+    .messageArticle {
+        width: fit-content;
+        max-width: 85%;
+        align-self: flex-start;
+    }
+
+    .inputContainer {
+        top: 93.5%;
+        position: fixed;
+        display: flex;
+        padding: 12px;
+        width: calc(100% - 390px);
+        border-top: 1px solid #707070;
+        align-items: center;
+        background-color: #eeeeee;
+    }
+
+    .input {
+        font-size: 16px;
+        flex-grow: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .sendButton {
+        background-color: #bbe1f1;
+        color: #000000;
+        border: none;
+        padding: 4px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        align-content: center;
+    }
+
+    .deleteButton {
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: #757575;
+        border: none;
+        cursor: pointer;
+        align-content: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        max-height: 28px
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 260px;
+        background: rgba(165, 219, 237, 0.56);
+        box-shadow: -2px 2px 6px 0 rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 61px;
+        right: 0;
+        z-index: 3;
+        backdrop-filter: blur(8px);
+    }
+
+    .dLink {
+        /*padding: 20px 0;
+        width: 100%;*/
+        padding-right: 16px;
+        padding-left: 16px;
+        list-style-type: none;
+        display: block;
+        height: 38px;
+        width: calc(100% - 32px);
+        padding-top: 12px;
+        color: #002D40;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .dLink:hover {
+        background-color: rgba(0, 65, 96, 0.25);
+    }
+
+    .navLinks li {
+        text-align: center;
+        padding: 15px 0;
+        width: 10%;
+        list-style-type: none;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10%;
+        background: rgba(141, 141, 141, 0.17);
+
+    }
+
+    .burger:hover {
+        /*border: 2px solid rgba(0, 120, 253, 0.33);*/
+        background: rgba(103, 103, 103, 0.17);
+        border-radius: 10%;
+        margin-inside: 5px;
+    }
+
+    .navActive {
+        display: flex;
+    }
+
+    .messageContainer {
+        display: flex;
+        width: fit-content;
+    }
+
+    .messageText {
+        font-size: initial;
+        margin: 0;
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    .messageTextCA {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .messageTextOwn {
+        font-size: 12px;
+        margin: 0;
+        align-self: flex-end;
+
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .burger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .chatHeader {
+        margin-top: -60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        background-color: #bbe1f1;
+        padding: 10px 0;
+        border-bottom: 1px solid #707070;
+        box-shadow: 4px 4px 9px 0px #bfbfbf;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #cccccc;
+        border-radius: 50%;
+        margin-left: 10px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .menuIcon {
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+    }
+
+    .messagesSend {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        flex-grow: 1;
+        padding: 16px;
+
+    }
+
+    .outerMessageSend {
+        margin-top: 60px;
+        height: 87.5vh;
+        overflow-y: auto;
+        scroll-behavior: auto; /*maybe switch to smooth*/
+    }
+
+    .messageSend {
+        display: flex;
+        /*align-self: flex-start;*/
+        background-color: #cccccc;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: fit-content;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .messageSendOwn {
+        display: flex;
+        align-self: flex-end;
+        background-color: #bbe1f1;
+        padding: 10px;
+        border-radius: 10px;
+        width: fit-content;
+        margin-top: 5px;
+        margin-bottom: 16px;
+    }
+
+    .messageArticleOwn {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-self: flex-end;
+        max-width: 85%;
+    }
+
+    .messageArticle {
+        width: fit-content;
+        max-width: 85%;
+        align-self: flex-start;
+    }
+
+    .inputContainer {
+        top: 94%;
+        position: fixed;
+        display: flex;
+        padding: 10px;
+
+        border-top: 1px solid #707070;
+        align-items: center;
+        background-color: #eeeeee;
+        width: 100%;
+    }
+
+    .input {
+        flex-grow: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .sendButton {
+        background-color: #bbe1f1;
+        color: #000000;
+        border: none;
+        padding: 4px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        align-content: center;
+    }
+
+    .deleteButton {
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: #757575;
+        border: none;
+        cursor: pointer;
+        align-content: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        max-height: 28px
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background: #bbe1f1;
+        position: absolute;
+        top: 40px;
+        right: 1%;
+    }
+
+    .navLinks li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10%;
+        background: rgba(141, 141, 141, 0.17);
+
+    }
+
+    .burger:hover {
+        /*border: 2px solid rgba(0, 120, 253, 0.33);*/
+        background: rgba(103, 103, 103, 0.17);
+        border-radius: 10%;
+        margin-inside: 5px;
+    }
+
+    .navActive {
+        display: flex;
+    }
+
+    .messageContainer {
+        display: flex;
+        width: fit-content;
+    }
+
+    .messageText {
+        font-size: initial;
+        margin: 0;
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    .messageTextCA {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .messageTextOwn {
+        font-size: 12px;
+        margin: 0;
+        align-self: flex-end;
+
+    }
+}

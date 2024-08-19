@@ -1,0 +1,469 @@
+.chatApp {
+    height: 0;
+    margin-right: 0;
+    flex-direction: column;
+}
+
+.user {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 370px;
+    background-color: #9cd3e6;
+    border-bottom: 1px solid #707070;
+    z-index: 1;
+
+}
+
+.info {
+    align-content: center;
+    width: 210px;
+    height: 40px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+}
+
+.avatarUser {
+    width: 40px;
+    height: 40px;
+    background-color: #ececec;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+}
+
+.menuIcon {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+}
+
+.search {
+    margin-left: 16px;
+    padding: 10px;
+    width: 315px;
+    margin-right: 16px;
+    border-radius: 10px;
+    border: 2px solid #707070;
+    align-self: center;
+    z-index: 2;
+}
+
+.searchContainer {
+    position: fixed;
+    margin-top: 61px;
+    background-color: #efefef;
+    height: 60px;
+    width: 370px;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    box-shadow: -4px 4px 9px 0px #bfbfbf;
+}
+
+.nav {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.contactSearch {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    /*cursor: pointer;*/
+    background-color: #ffffff;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.contactSearch:hover {
+    background-color: #e3e3e3;
+}
+
+.contact:hover {
+    background-color: #e3e3e3;
+}
+
+.contactSelected {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #bbe1f1;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.contactSelected:hover {
+    background-color: #9edeef;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(165, 219, 237, 0.56);
+    position: absolute;
+    top: 61px;
+    right: 0;
+    z-index: 3;
+    backdrop-filter: blur(8px);
+    box-shadow: -2px 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dLink {
+    /*padding: 20px 0;
+    width: 100%;*/
+    padding-right: 16px;
+    padding-left: 16px;
+    list-style-type: none;
+    display: block;
+    height: 38px;
+    width: calc(100% - 32px);
+    padding-top: 12px;
+    color: #002D40;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dLink:hover {
+    background-color: rgba(0, 65, 96, 0.25);
+}
+
+.navLinks a {
+    text-decoration: none;
+}
+
+.editPageActive {
+    display: flex;
+    flex-direction: column;
+    width: 338px;
+    background: rgba(165, 219, 237, 0.56);
+    position: absolute;
+    top: 160px;
+    padding: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: -2px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+.editPage {
+    display: none;
+}
+
+.form {
+
+}
+
+.button {
+    padding-right: 16px;
+    padding-left: 16px;
+    list-style-type: none;
+    display: block;
+    height: 38px;
+    width: calc(100% - 16px);
+    padding-top: 12px;
+    color: #002D40;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.button:hover {
+    background-color: rgba(0, 65, 96, 0.25);
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.burger {
+    border: none;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10%;
+    background: rgba(110, 110, 110, 0.17);
+
+}
+
+.spacer {
+    width: 260px;
+}
+
+.burger:hover {
+    /*border: 2px solid rgba(0, 120, 253, 0.33);*/
+    background: rgba(78, 78, 78, 0.17);
+    border-radius: 10%;
+    margin-inside: 5px;
+}
+
+.burger:hover {
+    /*border: 2px solid rgba(0, 120, 253, 0.33);*/
+    background: rgba(103, 103, 103, 0.17);
+    border-radius: 10%;
+    margin-inside: 5px;
+}
+
+.messages {
+    width: 20px;
+    height: 20px;
+    background-color: #FF6363;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 2px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navActive {
+    display: flex;
+}
+
+.contactList {
+    /* flex-direction: column-reverse; */
+    max-height: 86.5vh;
+    margin-top: 120px;
+    width: 370px;
+    overflow-y: auto;
+}
+
+.createButton {
+    background-color: #bbe1f1;
+    color: #000000;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-content: center;
+    position: relative;
+}
+
+.createButton:hover {
+    background-color: #8ed3ec;
+}
+
+@media screen and (max-width: 599px) {
+    .chatApp {
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        width: 100%;
+    }
+
+    .nav {
+        background-color: #efefef;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        background-color: #bbe1f1;
+        border-bottom: 1px solid #707070;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #cccccc;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    .menuIcon {
+        margin-left: auto;
+        width: 20px;
+        height: 20px;
+        background-color: #cccccc;
+
+    }
+
+    .search {
+        padding: 10px;
+        margin: 16px;
+        border-radius: 10px;
+        border: 2px solid #707070;
+        z-index: 2;
+        width: 85%;
+    }
+
+    .searchContainer {
+        position: fixed;
+        margin-top: 61px;
+        background-color: #efefef;
+        height: 60px;
+        width: 100%;
+        display: block;
+        align-content: center;
+        justify-content: center;
+        box-shadow: -4px 4px 9px 0px #bfbfbf;
+    }
+
+    .contacts {
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        flex-grow: 3;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        cursor: pointer;
+        background-color: #ffffff;
+        border: 2px solid #707070;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background: #bbe1f1;
+        position: absolute;
+        top: 40px;
+        right: 100%;
+        z-index: 3;
+    }
+
+    .navLinks li {
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+    }
+
+    .burger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .messages {
+        width: 20px;
+        height: 20px;
+        background-color: #FF6363;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 10px;
+        padding: 2px;
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactList {
+        max-height: 100%;
+        width: 95%;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background: #bbe1f1;
+        position: absolute;
+        top: 40px;
+        right: 1%;
+    }
+
+    .navLinks li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10%;
+        background: rgba(141, 141, 141, 0.17);
+
+    }
+
+    .burger:hover {
+        /*border: 2px solid rgba(0, 120, 253, 0.33);*/
+        background: rgba(103, 103, 103, 0.17);
+        border-radius: 10%;
+        margin-inside: 5px;
+    }
+
+    .navActive {
+        display: flex;
+    }
+}

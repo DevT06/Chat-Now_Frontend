@@ -1,0 +1,154 @@
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.logoContainer {
+
+
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    margin-bottom: -100px;
+}
+
+.title {
+    font-size: 4rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.displayLinkBlue {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 599px) {
+    .authContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 8rem;
+        color: #333;
+        margin: 0;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .inputGroup {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .input {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+
+    .link {
+        margin-top: 1em;
+        text-decoration: none;
+    }
+
+    .displayLinkBlue {
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
