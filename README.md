@@ -18,7 +18,7 @@ werden.
 ### Frontend:
 
 1. Navigieren Sie zu ihrem erstellten Projekt-Verzeichnis: "cd name".
-2. Führen Sie folgenden Befehl im Terminal aus: git clone git@github.com:DevT06/Chat-Now_Frontend.git
+2. Führen Sie folgenden Befehl im Terminal aus: `git clone git@github.com:DevT06/Chat-Now_Frontend.git`
 3. Öffnen Sie nun im Editor oder IDE ihrer Wahl das Projekt unter (ihr Pfad) ...\name\frontend
 4. Öffnen Sie ein Terminal, welches sich im Projekt-Verzeichnis befindet und geben Sie folgenden Befehl ein: "npm
    install"
@@ -26,7 +26,7 @@ werden.
 ### Backend:
 
 1. Navigieren Sie zu ihrem erstellten Projekt-Verzeichnis: "cd name".
-2. Führen Sie folgenden Befehl im Terminal aus: git clone git@github.com:DevT06/Chat-Now_Backend.git
+2. Führen Sie folgenden Befehl im Terminal aus: `git clone git@github.com:DevT06/Chat-Now_Backend.git`
 3. Öffnen Sie nun im Editor oder IDE ihrer Wahl das Projekt unter (ihr Pfad) ...\name\backend\BackendChatApp
 4. Stellen Sie sicher, dass Sie sich im Solution Verzeichnis BackenChatApp befinden und Bauen Sie die Solution mit:
    dotnet build
