@@ -237,4 +237,4 @@ Auflösung: Desktop: 1920x1080, Mobile: 375x667
 ### - This Readme was not entirely written by me others in from this Project alsow share contributions. 
 #### - This Project is no longer maintained and will likeley not be updated in the future
 #### - This Readme may contain alot of spelling errors and inconsistencies due to the project being rushed to a certain Extent
-update readme?    
+readme might still get updates  
