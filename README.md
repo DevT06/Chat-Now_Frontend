@@ -233,8 +233,8 @@ Auflösung: Desktop: 1920x1080, Mobile: 375x667
 - Was würdest du nächstes Mal anders machen?<br/> 
   Strukturierteres Vorgehen.
     
-### - This was a Project student Project
+### - This was a Student Project
 ### - This Readme was not entirely written by myself others also share contributions. 
 #### - This Project is no longer maintained and will likeley not be updated in the future
-#### - This Readme may contain alot of spelling errors and inconsistencies due to the project being rushed to a certain Extent
+#### - This Readme may contain alot of spelling errors and inconsistencies due to the project being rushed to a certain extent
 readme might still get updates  
